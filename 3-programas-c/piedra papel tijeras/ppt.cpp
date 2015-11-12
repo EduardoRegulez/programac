@@ -4,7 +4,7 @@
 #include <string.h>
 int main(){
     srand (time(NULL));
-    int oponente = rand() % 2;
+    int oponente = rand() % 3;
     char usuarios[10];
     int usuarioi;
  
