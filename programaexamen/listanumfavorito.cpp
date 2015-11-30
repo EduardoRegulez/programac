@@ -8,7 +8,7 @@ int main(){
 
 
    
-   system("toilet -F border --gay -f pagga \"Numero favorito de tus estudiantes \""); 
+   //system("toilet -F border --gay -f pagga \"Numero favorito de tus estudiantes \""); 
 
     
     FILE * fp;
