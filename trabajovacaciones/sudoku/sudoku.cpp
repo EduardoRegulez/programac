@@ -20,7 +20,7 @@ void generador(){
     tabla[random][random2]=randominput;
     for(int l =0;l<9;l++)
     while(tabla[random][random2]== tabla[random][l]||tabla[random][random2]==tabla[l][random2])
-	int randominput = rand() % 9;
+	int randominput = rand() % 9 + 1;
     	tabla[random][random2]=randominput;
 	
     }
