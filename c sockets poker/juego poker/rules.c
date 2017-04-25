@@ -68,9 +68,6 @@ void Crea_Cartas(){
     car[i].palo  = "Spades";
 }
 
-
-
-
 }
 
 }
