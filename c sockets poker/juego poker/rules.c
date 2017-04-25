@@ -74,8 +74,7 @@ void Crea_Cartas(){
 }
 
 }
-void reglas(int *array_ganador){////**************************************//////////////
-    int j;
+void reglas(int *array_ganador){
     bool threekind;
     int paircount;
 
@@ -95,7 +94,7 @@ void reglas(int *array_ganador){////**************************************//////
             printf("%d \n",cartas_jugador[ii]);
             printf("%d \n",car[cartas_jugador[ii]].numero);
         }
-        printf("wtf");
+        printf("test reach");
  int highcard = 0, lowcard, ranking = 0;
  bool repticion_fuera;
  int comparar[numjugadores][3];
@@ -224,23 +223,23 @@ void reglas(int *array_ganador){////**************************************//////
                             posicion=i;
                             juego_estructura.ganador_ronda[posicion] = 1;
                           }
-                            //ganadora
+
                           if(comparar[i][1] < comparar[j][1]){
                             posicion=j;
                             juego_estructura.ganador_ronda[posicion] = 1;
                           }
-                            //ganadora
+
                           if(comparar[i][1] == comparar[j][1]){
                           if(comparar[i][2] > comparar[j][2]){
                             posicion=i;
                             juego_estructura.ganador_ronda[posicion] = 1;
                           }
-                            //ganadora
+
                           if(comparar[i][2] < comparar[j][2]){
                             posicion=j;
                             juego_estructura.ganador_ronda[posicion] = 1;
                           }
-                            //ganadora
+
                           if(comparar[i][2] == comparar[j][2]){
                              juego_estructura.ganador_ronda[i] = 1;
                              juego_estructura.ganador_ronda[j] = 1;
@@ -251,19 +250,6 @@ void reglas(int *array_ganador){////**************************************//////
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -295,12 +281,6 @@ array_ganador[4]=1;
 
 
 reglas(array_ganador);
-
-
-
-
-
-
 
 
     return 0;
